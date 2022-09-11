@@ -171,3 +171,65 @@
         font-weight: bold;
         background: #bde1ff;
     }
+
+    /* Contact */
+    form {
+        margin: 30px 100px 50px 100px;
+        font-weight: bold;
+    }
+    label {
+        display: block;
+        margin: 15px 0 0 0; /* top right bottom left */
+      }
+      main h1 {
+        text-indent: 100px;
+      }
+      main p {
+        margin: 30px 100px 50px 100px; 
+        padding-right: 100px;
+      }
+      .contactinfo {
+        margin: 30px 100px 50px 100px;
+        }
+    legend {
+            color: #4977d1;
+            text-transform: uppercase;
+            font-weight: bold;
+
+        }
+    
+    .phone {
+        margin-bottom: 10px;
+      }
+    .radios label {
+       display: inline;
+           }
+    .radios {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .selectmenu label {
+        display: inline;
+    }
+     input {
+        width: 300px;
+      }
+      input[type="radio"] {
+        width: 25px;
+      }
+      textarea {
+        width: 300px;
+      }
+      input[type="submit"] {
+        display: block;
+        text-align: center;
+        float: right;
+        background-color: #3B5998;
+        border: none;
+        margin: 20px 0 10px 0;
+        width: 100px;
+        height: 30px;
+      }
+      span:first-child {
+        width: 300px;
+      }
