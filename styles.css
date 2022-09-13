@@ -16,6 +16,11 @@
         background:  url(images/cliff_rock.jpg)no-repeat lightgrey;
         background-size: 1500px;
     }
+    #cliffs header {
+        background: url(images/forest_cliff.jpg);
+        background-size: 1500px;
+        margin: 25px 25px 25px 25px;
+    }
     .main-header {
         background-color: rgb(255, 255, 255, 0.8);
         width:700px;
@@ -63,6 +68,9 @@
     main h1 {
         font-family: Arial, Helvetica, sans-serif;
         color: #9ed034;
+    }
+    main h2 {
+        text-indent: 100px;
     }
     /* Partners */
     section {
@@ -233,3 +241,75 @@
       span:first-child {
         width: 300px;
       }
+      /*cliffs*/
+      #cliffs p {
+        margin-bottom: 15px;
+      }
+      section {
+        margin-top: 100px;
+      }
+      #cliffs .image{
+        height: 400px;
+        width: 400px;
+        text-align:center;
+        padding-top:2px;
+        background-image:url(images/cliff-north-mountain.jpg);
+        background-size: 500px no-repeat;
+        }
+        #north-cliff {
+            display: inline;
+            height: 250px;
+            width: 250px;
+        }
+        #north-cliff caption {
+            color: #fff;
+        }
+        #south-cliff {
+            display: inline;
+            height: 250px;
+            width: 250px; 
+            margin-top: none; 
+            margin-bottom: 50px;
+        }
+        #south-cliff caption {
+            color: #fff;
+        }
+        #east-cliff {
+            display: inline;
+            height: 250px;
+            width: 250px;
+            margin-top: 50px; 
+            margin-bottom: 50px;
+        }
+        #east-cliff caption {
+            color: #fff;
+        }
+        #west-cliff {
+            display: inline;
+            height: 250px;
+            width: 250px;
+            
+        }
+        #west-cliff caption {
+            color: #fff;
+        }
+        table, caption, th, td { /*group selector */
+            border: none;
+            margin: 50px 0 0 0;
+          }
+          table {
+            padding: 0 0 0 100px;
+          }
+        caption, td {
+            padding: none;
+        }
+          th, td {
+            width: 150px;
+            height: 35px;
+            text-align: center;
+          }
+          caption {
+            font-weight: 600;
+            height: 40px;
+            color: #753a30;
+          }
