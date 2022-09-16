@@ -92,7 +92,10 @@ function currentTime() {
     var min = d.getMinutes (); //Get current minutes
     var sec = d.getSeconds (); //Get current seconds
     var ampm; //Declare empty variable to store AM or PM
-
+    var utchr= d.getUTCHours ();
+    var timeDiff = utchr - hr; //Calculate time difference
+    var adjTimeDiff = Math.abs(timeDiff); //Convert time difference to be positive
+    var timeZone;
     //Add 0 to single digits for seconds
     if (sec < 10) {
         sec = "0" + sec;
@@ -110,21 +113,13 @@ function currentTime() {
     } else {
         ampm = "AM"; //Set to AM
     }
-    //Assemble time format to display
-    var time = hr + ":" + min + ":" + sec + " " +ampm;
-    
-    //Display current local time and time zone on HTML elements
-    document.getElementById("clock").innerText = time; //adding time
-
-    //Run time data function every 1 second
-    setInterval(currentTime, 1000); //setting timer
+   
     
     //Determine time difference
     if (utchr > 12) {
         utchr -=12; //Convert military time to standard
     }
-    timeDiff = utchr - hr; //Calculate time difference
-    adjTimeDiff = Math.abs(timeDiff); //Convert time difference to be positive
+    
 
     if(adjTimeDiff === 4) {
         timeZone = "ET";
@@ -135,12 +130,20 @@ function currentTime() {
     } else if (adjTimeDiff === 7) {
         timeZone = "PT";
     } else {
-        timeZone = " ";
+        timeZone = "gmt";
     }
-}
- //initial run of time data function
-    currentTime();
 
+     //Assemble time format to display
+     var time = hr + ":" + min + ":" + sec + " " +ampm + " " + utchr;
+    console.log(utchr);
+     //Display current local time and time zone on HTML elements
+     document.getElementById("clock").innerText = time; //adding time
+
+//Run time data function every 1 second
+setInterval(currentTime, 1000); //setting timer
+}
+//initial run of time data function
+    currentTime();
 
 //footer
 
@@ -148,7 +151,7 @@ function currentTime() {
     var fileNames = []; //Declare an empty element to store file names
     var imageList = []; //Declare an empty array to store html list that contain an image
     var image; //Declare an empty variable to store the assembled list code
-    var openList = "<li class='partners'>"; //Declare a variable to contain open list tag
+    var openList = "<li class='partner'>"; //Declare a variable to contain open list tag
     var closeList = "</li>"; //Declare a variable to contain a close list tag
 
     //Create loop to create 6 images starting with index of 0
@@ -159,7 +162,9 @@ function currentTime() {
         imageList.push(image); //Store(push) the assembled list codes into an array
     }
     //Display all six image codes stored in the array
-    document.getElementById("partners").innerHTML = imageList.join(" "); //.join (" ") to get rid of ,
+    document.getElementById("partners").innerHTML = imageList.join(" "); //.join (" ") to get rid of , 
+    
+    
 </script>
 </body>
 </html>

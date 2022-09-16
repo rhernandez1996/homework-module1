@@ -249,9 +249,7 @@
         width: 100px;
         height: 30px;
       }
-      span:first-child {
-        width: 300px;
-      }
+     
       /*cliffs*/
       #cliffs p {
         margin-bottom: 15px;
