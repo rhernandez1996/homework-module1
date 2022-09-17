@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Contact</title>
-    <meta charset="utf-8">
-   <!--Font Awesome-->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-<link rel="stylesheet" href="styles.css">
+    <title>Great Cliffs of California</title>
+    <meta charset="utf-8" />
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--Embed style Method-->
+    <link rel="stylesheet" href="styles.css" />
 </head>
-<body id="contact">
+
+<body id="home">
     <header>
         <div class="main-header">
             <div class="logo">
-                <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
+                <img src="images/logo.png" alt="Great Cliffs Logo" width="125" />
+            </div>
+
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cliffs.html">Cliffs</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    
-    <nav class="main-menu">
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href=cliffs.html>Cliffs</a></li>
-        <li><a href="activities.html">Activities</a></li>
-        <li class="active"><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
     </header>
 
 <main>
@@ -113,93 +117,26 @@ the Cliffs, Hours of Operations, Facilities or questions about this site using o
 </section>
 
 <footer>
-
     <div id="nondisclaimer">
-        <div class="copy">&copy;
- Copyright 2020 :: GreatCliffs.com
-        </div>    
-<div class="social">
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-instagram"></a>
-<a href="#" class="fa fa-twitter"></a>
-</div>
+        <div class="copy">&copy; Copyright 2020 :: GreatCliffs.com</div>
+    </div>
+    <div class="social">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+    </div>
 
-<div id="disclaimer">
-<p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
-</div>
-
+    <div id="disclaimer">
+        <p>
+            This website is designed and created solely for educational purposes
+            only at Westcliff University. All contents are not intended for any
+            commercial gain or use.
+        </p>
+    </div>
 </footer>
 
 <!--JavaScript Codes-->
 <script>
-    //Create a time data function
-    function currentTime() {
-        //Declare variables
-        var d = new Date(); //Get current date
-        var hr = d.getHours(); //Get current Hours
-        var min = d.getMinutes(); //Get current minutes
-        var sec = d.getSeconds(); //Get current seconds
-        var ampm; //Declare empty variable to store AM or PM
-        var utchr = d.getUTCHours();
-        var mth = d.getMonth(); //Get current month (0-11)
-        var timeDiff = utchr - hr; //Calculate time difference
-        var adjTimeDiff = Math.abs(timeDiff); //Convert time difference to be positive
-        var timeZone;
-
-        //Convert mth index number to actual month number (1-12)
-        var monthNum = mth + 1;
-
-        //Determine if currently standard time (summer) by adjusting GMT
-        if (monthNum >= 3 && monthNum <= 10) {
-            utchr = utchr + 1;
-        }
-        //Add 0 to single digits for seconds
-        if (sec < 10) {
-            sec = "0" + sec;
-        }
-        //Add 0 to single digits for minutes
-        if (min < 10) {
-            min = "0" + min;
-        }
-        //Determine AM or PM string
-        if (hr == 12) {
-            ampm = "PM"; //Set to PM
-        } else if (hr > 12) {
-            hr -= 12; //Deduct 12 hours from greater than 12 (military time)
-            ampm = "PM"; //Set to PM
-        } else {
-            ampm = "AM"; //Set to AM
-        }
-
-        //Determine time difference
-        if (utchr > 12) {
-            utchr -= 12; //Convert military time to standard
-        }
-
-        if (adjTimeDiff === 4) {
-            timeZone = "ET";
-        } else if (adjTimeDiff === 5) {
-            timeZone = "CT";
-        } else if (adjTimeDiff === 6) {
-            timeZone = "MT";
-        } else if (adjTimeDiff === 7) {
-            timeZone = "PT";
-        } else {
-            timeZone = "gmt";
-        }
-
-        //Assemble time format to display
-        var time = hr + ":" + min + ":" + sec + " " + ampm + " " + timeZone;
-
-        //Display current local time and time zone on HTML elements
-        document.getElementById("clock").innerText = time; //adding time
-
-        //Run time data function every 1 second
-        setInterval(currentTime, 1000); //setting timer
-    }
-    //initial run of time data function
-    currentTime();
-
     //footer
 
     var photos = []; //Declare an empty array to store img element
@@ -219,6 +156,6 @@ the Cliffs, Hours of Operations, Facilities or questions about this site using o
     //Display all six image codes stored in the array
     document.getElementById("partners").innerHTML = imageList.join(" "); //.join (" ") to get rid of ,
 </script>
-
 </body>
+
 </html>
