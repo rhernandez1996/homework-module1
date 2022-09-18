@@ -23,7 +23,7 @@
     }
     .main-header {
         background-color: rgb(255, 255, 255, 0.8);
-        width:700px;
+        width:800px;
         margin: 2em auto 0 auto;
         min-height: 100px;
         height: 100px;
@@ -274,4 +274,5 @@
         margin-left: 200px;
         margin-bottom: 200px;
       }
+    
     
