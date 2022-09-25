@@ -220,14 +220,27 @@ form .button input {
   width: 8em;
   height: 2.5em;
   font-size: 1.2em;
-  float: right;
   font-weight: bold;
-  background-color: #4977d1;
+  /* background-color: #4977d1;*/
   text-transform: uppercase;
   color: white;
   border: none;
+  margin-top: 20px;
 }
 
+form .button  {
+display: flex;
+justify-content: center;
+
+}
+
+.randomcode {
+display: flex;
+justify-content: center;
+height: 2.5em;
+font-size: 1.2em;
+font-weight: bold;
+}
 input[type="name"] {
   width: 430px;
 }
