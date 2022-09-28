@@ -159,6 +159,15 @@ footer .social .fa-instagram {
   align-items: center;
 }
 /* activities */
+.highlight {
+  color: black;
+  background: green;
+}
+
+#table {
+  cursor: pointer;
+}
+}
 table {
   width: 1000px;
   margin: 4em auto 0 auto;
@@ -178,8 +187,11 @@ tbody {
   background: #eeffe6;
   text-align: center;
 }
-th,
-td {
+tfoot {
+  background: #eeffe6;
+  text-align: center;
+}
+th, td {
   width: 225px;
   height: 75px;
   vertical-align: middle;
