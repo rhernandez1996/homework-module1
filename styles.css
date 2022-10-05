@@ -185,6 +185,8 @@ footer .social .fa-instagram {
 #table {
   cursor: pointer;
 }
+.highlight {
+  color: #9ed034;
 }
 table {
   width: 1000px;

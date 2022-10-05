@@ -19,6 +19,11 @@ $(document).ready(function () {
           //checkif there are any child elements within parent
           $("displaySelected").css("visibility", "hidden"); //make display box hidden
           $("displaySelected").css("margin-top", "0"); //remove spaces above display box
+
+          if ($(this).hasClass("tdhighlight")) {
+             var index = $( "td" ).eq( 1 ).index( this );
+            $ (content).text("at" + index);
+          }
         }
       }
     }
