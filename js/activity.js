@@ -3,7 +3,7 @@ $(document).ready(function () {
     //select data cell
     var content = $(this).text();
 
-    if (content != "Not Avaliable") {
+    if (content != "Not Available") {
       $(this).toggleClass("tdhighlight"); //add or remove cell when selected
 
       if ($(this).hasClass("tdhighlight")) {

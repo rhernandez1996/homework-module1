@@ -3,9 +3,21 @@
   <head>
     <title>Great Cliffs of California</title>
     <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width = device-width, initial-scale = 1, shrink-to-fit = no"
+    />
 
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <!--Font Awesome-->
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!--Embed style Method-->
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -17,13 +29,30 @@
           <img src="images/logo.png" alt="Great Cliffs Logo" width="125" />
         </div>
 
-        <nav class="main-menu">
-          <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="cliffs.html">Cliffs</a></li>
-            <li><a href="activities.html">Activities</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <nav
+          id="main-menu"
+          class="navbar navbar-expand-sm navbar-dark bg-secondary"
+        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active"><a href="index.html">Home</a></li>
+              <li class="nav-item"><a href="cliffs.html">Cliffs</a></li>
+              <li class="nav-item"><a href="activities.html">Activities</a></li>
+              <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -98,6 +127,5 @@
     <script src="js/digclock.js"></script>
     <!--Partners-->
     <script src="js/site_scripts.js"></script>
-  
   </body>
 </html>
