@@ -27,12 +27,14 @@ header {
   margin: 2em auto 0 auto;
   min-height: 100px;
   height: 100px;
+  display: inline-block;
 }
 #main-header .logo img {
   width: 100px;
   height: 100px;
   margin: 0 2em 0 0;
   float: left;
+  display: inline-block;
 }
 /* navigation*/
 
@@ -75,6 +77,47 @@ main h1 {
 main h2 {
   text-indent: 100px;
 }
+/* media queries*/
+
+@media (max-width: 600px) {
+
+  /*all default styles are mobile so its 600 and below/ mobile first design approach*/
+  #partners .partners {
+    grid-template-columns: repeat(1, lfr);
+    /* creates columns / equal apart then 1fraction*/
+  }
+}
+@media (min-width: 600px) {
+
+  /*all default styles are mobile so its 600 and below/ mobile first design approach*/
+  #partners .partners {
+    grid-template-columns: repeat(1, lfr);
+    /* creates columns / equal apart then 1fraction*/
+  }
+}
+@media (min-width: 768px) {
+
+  /*all default styles are mobile so its 600 and below/ mobile first design approach*/
+  #partners .partners {
+    grid-template-columns: repeat(2, lfr);
+    /* creates columns / equal apart then 1fraction*/
+  }
+}
+/* screen larger than 992 pixels? make it three columns*/
+@media (min-width: 992px) {
+  #partners .partners {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+
+  /*all default styles are mobile so its 600 and below/ mobile first design approach*/
+  #partners .partners {
+    grid-template-columns: repeat(6, lfr);
+    /* creates columns / equal apart then 1fraction*/
+  }
+}
+
 /* Partners */
 section {
   width: 100%;
