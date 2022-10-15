@@ -34,13 +34,13 @@ header {
   min-height: 100px;
   height: 100px;
   display: inline-block;
+  background-color: white;
 }
 #main-header .logo img {
   width: 100px;
   height: 100px;
   margin: 0 2em 0 0;
   float: left;
-  display: inline-block;
 }
 /* navigation*/
 
@@ -60,7 +60,6 @@ header {
   line-height: 100px;
   text-transform: uppercase;
   font-size: 14px;
-  background-color: white;
 }
 #main-menu ul li a {
   text-decoration: none;
@@ -89,7 +88,7 @@ main h2 {
 @media (max-width: 600px) {
 
   /*all default styles are mobile so its 600 and below/ mobile first design approach*/
-  #partners .partners {
+  #partners {
     grid-template-columns: repeat(1, lfr);
     /* creates columns / equal apart then 1fraction*/
   }
@@ -97,7 +96,7 @@ main h2 {
 @media (min-width: 600px) {
 
   /*all default styles are mobile so its 600 and below/ mobile first design approach*/
-  #partners .partners {
+  #partners {
     grid-template-columns: repeat(1, lfr);
     /* creates columns / equal apart then 1fraction*/
   }
@@ -105,21 +104,21 @@ main h2 {
 @media (min-width: 768px) {
 
   /*all default styles are mobile so its 600 and below/ mobile first design approach*/
-  #partners .partners {
+  #partners {
     grid-template-columns: repeat(2, lfr);
     /* creates columns / equal apart then 1fraction*/
   }
 }
 /* screen larger than 992 pixels? make it three columns*/
 @media (min-width: 992px) {
-  #partners .partners {
+  #partners {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 1200px) {
 
   /*all default styles are mobile so its 600 and below/ mobile first design approach*/
-  #partners .partners {
+  #partners {
     grid-template-columns: repeat(6, lfr);
     /* creates columns / equal apart then 1fraction*/
   }
