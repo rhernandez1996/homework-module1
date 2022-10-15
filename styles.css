@@ -5,10 +5,16 @@ header {
   padding-top: 3em;
 }
 #home header {
-  background: url(images/cliff_ocean.jpg) no-repeat lightgrey;
-  background-size: 1500px;
-}
-#activities header {
+      width: 100%;
+      height: 500px;
+      background-image: url('images/cliff_ocean.jpg');
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: rgb(203, 247, 220);
+    }
+  
+  #activities header {
   background: url(images/runfly.jpg) no-repeat lightgrey;
   background-size: 1500px;
 }
@@ -39,6 +45,7 @@ header {
 /* navigation*/
 
 #main-menu {
+  display: inline;
   margin-left: 227px;
   font-weight: 400;
   background-color: white;
@@ -118,6 +125,50 @@ main h2 {
   }
 }
 
+@media (max-width: 768px) {
+  footer #nondisclaimer .copy {
+    padding: 3.5em 0em 3.5em 0em;
+    text-align: center;
+    float: none;
+    font-size: 0.9em;
+  }
+
+  footer #nondisclaimer .social {
+    padding: 2.5em 0;
+    margin: 0;
+    text-align: center;
+    float: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo img {
+    position: relative;
+    bottom: 8px;
+  }
+
+  .main-menu {
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 1.7em;
+  }
+
+  .main-menu ul li {
+    border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+  }
+
+  main {
+    padding: 3em 1em 3em 1em;
+    margin: 0;
+  }
+
+  #home .main-col-content {
+    padding: 25px;
+    min-height: 450px;
+    margin-top: 1em;
+  }
+}
 /* Partners */
 section {
   width: 100%;
