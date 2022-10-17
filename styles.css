@@ -350,7 +350,7 @@ form {
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    background-color: rgb(203, 247, 220);
+    background-color: white;
     margin: 30px 100px 50px 100px;
     font-weight: bold;
   }
